@@ -1,0 +1,23 @@
+server:
+  port: 8502
+
+
+spring:
+  application:
+    name: service-consumer-feign-hystrix001
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8300/eureka/
+
+##配置超时
+ribbon:
+  ReadTimeout: 6000
+  ConnectTimeout: 6000
+
+##开启feign对hystrix的支持
+feign:
+  hystrix:
+    enabled: true

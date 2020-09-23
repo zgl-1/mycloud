@@ -1,0 +1,24 @@
+server:
+  port: 8689
+
+spring:
+  application:
+    name: service-config-client8689
+  cloud:
+    config:
+      label: master
+      name: application
+      profile: dev
+      uri: http://localhost:8688
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8300/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

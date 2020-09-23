@@ -1,0 +1,18 @@
+server:
+  port: 8503
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8300/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+spring:
+  application:
+    name: service-hystrix-dashboard

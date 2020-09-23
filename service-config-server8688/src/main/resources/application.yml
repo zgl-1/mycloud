@@ -1,0 +1,18 @@
+server:
+  port: 8688
+
+spring:
+  application:
+    name: service-config-server8688
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/zgl-1/cloud-config.git
+          search-paths: cloud-config
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8300/eureka/

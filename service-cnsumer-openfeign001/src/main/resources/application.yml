@@ -1,0 +1,22 @@
+server:
+  port: 8401
+
+
+spring:
+  application:
+    name: service-consumer-openfeign001
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8300/eureka/,http://localhost:8302/eureka/
+
+##配置超时
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+logging:
+  level:
+    com.zhu.service.FeignService: debug

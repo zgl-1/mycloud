@@ -1,0 +1,11 @@
+server:
+  port: 8300
+
+eureka:
+  instance:
+    hostname: service-eureka001
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+#    service-url:
+#      defaultZone: http://service-eureka002:8302/eureka/
