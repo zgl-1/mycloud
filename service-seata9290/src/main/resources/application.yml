@@ -1,0 +1,15 @@
+mybatis:
+  type-aliases-package: com.zhu.model
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+spring:
+  datasource:
+    url: jdbc:mysql://106.75.118.152:3306/seata_db_one?useSSL=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: MyNewPass4!
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 9290

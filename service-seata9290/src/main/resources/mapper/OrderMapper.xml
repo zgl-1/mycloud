@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhu.mapper.OrderMapper">
+
+    <update id="update" parameterType="com.zhu.model.Order">
+        update `order` set flag = 1 where id=#{id,jdbcType=BIGINT}
+    </update>
+    <insert id="insert" parameterType="com.zhu.model.Order">
+        insert into `order` (flag,`name`) values (#{flag},#{name})
+    </insert>
+</mapper>
