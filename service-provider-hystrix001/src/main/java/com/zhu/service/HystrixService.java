@@ -1,7 +1,3 @@
-/**
- * Copyright 2008-2009. Chongqing Communications Industry Services Co.,Ltd Information Technology Branch. All rights reserved.
- * <a>http://www.crunii.com</a>
- */
 package com.zhu.service;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
@@ -10,9 +6,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
-/**
- * @author 朱桂林 create 2020/9/11 14:27
- */
 @Service
 public class HystrixService {
 	/**

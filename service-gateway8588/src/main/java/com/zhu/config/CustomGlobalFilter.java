@@ -1,7 +1,3 @@
-/**
- * Copyright 2008-2009. Chongqing Communications Industry Services Co.,Ltd Information Technology Branch. All rights reserved.
- * <a>http://www.crunii.com</a>
- */
 package com.zhu.config;
 
 import lombok.extern.slf4j.Slf4j;
@@ -13,9 +9,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
 
-/**
- * @author 朱桂林 create 2020/9/15 15:24
- */
 @Component
 @Slf4j
 public class CustomGlobalFilter implements GlobalFilter, Ordered {

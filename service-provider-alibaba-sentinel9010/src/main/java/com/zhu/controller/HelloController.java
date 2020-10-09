@@ -1,7 +1,3 @@
-/**
- * Copyright 2008-2009. Chongqing Communications Industry Services Co.,Ltd Information Technology Branch. All rights reserved.
- * <a>http://www.crunii.com</a>
- */
 package com.zhu.controller;
 
 import com.alibaba.csp.sentinel.annotation.SentinelResource;
@@ -11,9 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author 朱桂林 create 2020/9/17 9:43
- */
 @RestController
 public class HelloController {
 	@Value("${server.port}")

@@ -1,7 +1,3 @@
-/**
- * Copyright 2008-2009. Chongqing Communications Industry Services Co.,Ltd Information Technology Branch. All rights reserved.
- * <a>http://www.crunii.com</a>
- */
 package com.zhu.controller;
 
 import com.zhu.config.RestContext;
@@ -12,9 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 
-/**
- * @author 朱桂林 create 2020/9/17 9:49
- */
 @RestController
 @RefreshScope
 public class HelloController {

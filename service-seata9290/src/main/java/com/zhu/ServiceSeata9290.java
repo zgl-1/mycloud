@@ -1,7 +1,3 @@
-/**
- * Copyright 2008-2009. Chongqing Communications Industry Services Co.,Ltd Information Technology Branch. All rights reserved.
- * <a>http://www.crunii.com</a>
- */
 package com.zhu;
 
 import org.mybatis.spring.annotation.MapperScan;
@@ -10,9 +6,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-/**
- * @author 朱桂林 create 2020/9/30 14:57
- */
 @SpringBootApplication
 @EnableFeignClients
 @EnableDiscoveryClient
