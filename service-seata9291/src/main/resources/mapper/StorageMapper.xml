@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhu.mapper.StorageMapper">
+
+    <update id="decri" parameterType="com.zhu.model.Storage">
+        update storage set num=num - 1 where id=#{id,jdbcType=BIGINT}
+    </update>
+
+</mapper>

@@ -4,20 +4,17 @@
  */
 package com.zhu;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
- * @author 朱桂林 create 2020/9/30 14:57
+ * @author 朱桂林 create 2020/10/9 15:54
  */
 @SpringBootApplication
-@EnableFeignClients
 @EnableDiscoveryClient
-public class ServiceSeata9290 {
+public class ServiceSeata9291 {
 	public static void main(String[] args) {
-		SpringApplication.run(ServiceSeata9290.class,args);
+		SpringApplication.run(ServiceSeata9291.class,args);
 	}
 }

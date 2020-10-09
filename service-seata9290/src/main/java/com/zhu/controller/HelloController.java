@@ -4,6 +4,7 @@
  */
 package com.zhu.controller;
 
+import com.zhu.service.OpenFeign;
 import com.zhu.service.OrderService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,11 +22,14 @@ public class HelloController {
 	@Resource
 	private OrderService orderService;
 
+	@Resource
+	private OpenFeign openFeign;
+
 	@RequestMapping("/hello")
 	public String hello(@RequestParam(value = "id",required = false)Long id){
-		orderService.insert();
-
-		orderService.update(id);
+		orderService.insert();//添加订单
+		openFeign.storageHello();//减少库存，每次减1
+		orderService.update(id);//更改订单状态
 		return "hello";
 	}
 }
