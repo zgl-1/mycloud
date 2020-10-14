@@ -16,6 +16,36 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+        group: SEATA_GROUP
 
 server:
   port: 9290
+
+seata:
+  application-id: ${spring.application.name}
+  enabled: true
+  tx-service-group: my_test_tx_group
+  enable-auto-data-source-proxy: true
+  service:
+    vgroup-mapping:
+      my_test_tx_group: default
+    grouplist:
+      default: localhost:8091
+  config:
+    type: nacos
+    nacos:
+      namespace: ""
+      serverAddr: localhost:8848
+      group: SEATA_GROUP
+      userName: "nacos"
+      password: "nacos"
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server #名称与服务端在nacos注册中心的名称一样
+      serverAddr: localhost:8848
+      group: SEATA_GROUP
+      namespace: ""
+      userName: "nacos"
+      password: "nacos"
+      cluster: default

@@ -16,5 +16,6 @@ public class StorageService {
 		Storage storage=new Storage();
 		storage.setId(1L);
 		storageMapper.decri(storage);
+		int a=8/0;
 	}
 }

@@ -28,6 +28,7 @@
         <module>service-provider-alibaba-sentinel9010</module>
         <module>service-seata9290</module>
         <module>service-seata9291</module>
+        <module>service-seata9292</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

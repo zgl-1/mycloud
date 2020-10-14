@@ -6,12 +6,12 @@ mybatis:
 
 spring:
   datasource:
-    url: jdbc:mysql://106.75.118.152:3306/seata_db_two?useSSL=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://106.75.118.152:3306/seata_db_three?useSSL=true&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     username: root
     password: MyNewPass4!
     driver-class-name: com.mysql.cj.jdbc.Driver
   application:
-    name: service-seata9291
+    name: service-seata9292
   cloud:
     nacos:
       discovery:
@@ -19,7 +19,7 @@ spring:
         group: SEATA_GROUP
 
 server:
-  port: 9291
+  port: 9292
 
 seata:
   application-id: ${spring.application.name}
